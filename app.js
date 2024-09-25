@@ -1,4 +1,3 @@
-console.log("hello stopwatch");
 const hrs = document.querySelector(".hrs");
 const mins = document.querySelector(".mins");
 const secs = document.querySelector(".secs");

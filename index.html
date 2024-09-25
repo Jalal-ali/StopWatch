@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>Stop Watch</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-dark text-light">
+<body class=" bg-gradient-to-r from-indigo-700 via-blue-700 to-purple-900">
 
-    
-    
-    <h1 class="text-center ">StopWatch!</h1>
-<hr>
-    <br>
-    <br>
-     <div class="container px-5 pt-2 py-2 rounded-pill bg- border-info border border-1 text-center">
-        <div class="d-flex text-center pt-5 justify-content-evenly">
-            <p>HOURS <br> <span class="hrs display-1">00</span></p>
-            <p ">MINUTES  <br> <span class="mins display-1">00</span></p>
-            <p>SECONDS <br> <span class="secs display-1">00</span></p>
-        </div>
-        <br>
-        <br>
-        <!-- <button  id="start-btn" class="px-4 py-2 btn-dark bg-dark text-light border-info">START</button> -->
-        <!-- <button onclick="reset()" class="px-4 py-2 btn-dark bg-dark text-light border-info">RESET</button> -->
-        <!-- <button onclick="stop()" class="px-4 py-2 btn-dark bg-dark text-light border-info">STOP</button> -->
-        <button onclick="start()" id="start-btn" class="button-33" >START</button>
-        <button onclick="stop()" class="button-33" role="button">STOP</button>
-        <button onclick="reset()" class="button-33" role="button">RESET</button>
-     </div>
+    <h1 class="text-center text-2xl lg:text-4xl m-4 text-slate-900 font-serif">Stop Watch</h1>
+<!-- .... -->
+<div class="w-80 lg:w-1/2  mx-auto rounded-lg bg-zinc-400 bg-opacity-30 px-4 shadow-lg m-20 p-10 text-center">
+    <div class="flex py-4 border-t border-slate-700 border-opacity-40 shadow-lg mx-4 rounded-xl justify-around">
+        <h6 class="text-sm text-gray-700 font-mono" >Hours <br> <span class="hrs text-gray-100 font-sans text-6xl">00</span></h6>
+        <h6 class="text-sm text-gray-700 font-mono">Minutes  <br><span class="mins text-gray-100 font-sans text-6xl">00</span></h6>
+        <h6 class="text-sm text-gray-700 font-mono">Seconds <br> <span class="secs text-gray-100 font-sans text-6xl">00</span></h6>
+        
+</div>        
+        <div class=" flex justify-center pt-5 lg:gap-8 md:gap-8 gap-3">
+            <button onclick="start()" id="start-btn" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start</button>
+            <button onclick="stop()" type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Stop</button>
+            <button onclick="reset()" type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Reset</button>
+    </div>
+ 
+</div>
 
 
 
@@ -41,8 +38,6 @@
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
